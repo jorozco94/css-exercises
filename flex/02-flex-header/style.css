@@ -1,6 +1,13 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  background-color:green;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+  /*justify content centers our logo here b/c there's 3 child containers, the left items, Logo, and the right items, so we build space between them with justify-content*/
+
 }
 
 .logo {
@@ -8,12 +15,17 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  padding: 10px 32px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  /*the gap here is what brings space between our buttons in the left and right button area specifically*/
 }
 
 a {
