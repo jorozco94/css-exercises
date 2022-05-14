@@ -1,5 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  /* we can apply text-align center here because we end up applying it to both the title and the flowers, which is basically everything within the body already so instead of redundantly applying it at both title and flowers like i initially did, we can just call it in the body*/
 }
 
 img {
@@ -10,6 +12,19 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.flowers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px;
+}
+
+.flower {
+  max-width: 200px;
+  /* I had initially used width here, but max-width is a more versatile property because it says the max-width can be what i declare BUT it can go smaller, whereas width says the width HAS TO BE what i declare and you con't change the width if you make the screen smaller, basically max-width is more responsive*/
 }
 
 /* do not edit this footer */
